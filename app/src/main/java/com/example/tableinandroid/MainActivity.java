@@ -40,18 +40,51 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String FullText = EditText1.getText().toString() + EditText2.getText().toString();
 
-                if(TV10.getText().toString().isEmpty()){
+                if(TV2.getText().toString().isEmpty()){
                     TV2.setText(FullText);
-                    TV3.setText(FullText);
-                    TV4.setText(FullText);
-                    TV5.setText(FullText);
-                    TV6.setText(FullText);
-                    TV7.setText(FullText);
-                    TV8.setText(FullText);
-                    TV9.setText(FullText);
-                    TV10.setText(FullText);
-                }else{
-                    Toast.makeText(MainActivity.this, "Table is Full! \n You cannot add more data anymore", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    if(TV3.getText().toString().isEmpty()){
+                        TV3.setText(FullText);
+                    }
+                    else{
+                        if(TV4.getText().toString().isEmpty()){
+                            TV4.setText(FullText);
+                        }
+                        else{
+                            if(TV5.getText().toString().isEmpty()){
+                                TV5.setText(FullText);
+                            }
+                            else{
+                                if(TV6.getText().toString().isEmpty()){
+                                    TV6.setText(FullText);
+                                }
+                                else{
+                                    if(TV7.getText().toString().isEmpty()){
+                                        TV7.setText(FullText);
+                                    }
+                                    else{
+                                        if(TV8.getText().toString().isEmpty()){
+                                            TV8.setText(FullText);
+                                        }
+                                        else{
+                                            if(TV9.getText().toString().isEmpty()){
+                                                TV9.setText(FullText);
+                                            }
+                                            else{
+                                                if(TV10.getText().toString().isEmpty()){
+                                                    TV10.setText(FullText);
+                                                }
+                                                else{
+                                                    Toast.makeText(MainActivity.this, "Table Rows is Full! \n\n You cant add more data.",Toast.LENGTH_SHORT).show();
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
 
